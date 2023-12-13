@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav>
             <div>
-                <h2 className='navhead'>Samarpan</h2>
+                <h2 className='navhead'>Mentalwell</h2>
             </div>
             <div>
                 <ul className={clicked ? "navbar active" : "navbar"}>
