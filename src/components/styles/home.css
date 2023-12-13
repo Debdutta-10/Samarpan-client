@@ -1,0 +1,88 @@
+/* Home.css */
+.home-container {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.background-image {
+    width: 100%;
+    object-fit: cover;
+  }
+.overlay {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+}
+.overlay h1{
+    text-shadow: 10px 0 10px black;
+    font-size: 3rem;
+}
+.overlay h4{
+    text-shadow: 10px 0 10px black;
+    font-size: 1.1rem;
+}
+.overlay p{
+    text-shadow: 10px 0 10px black;
+    font-size: 1.3rem;
+}
+.youtubeplayer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.youtubeplayer p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 75%;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:769px){
+    .home-container {
+        height: 35vh;
+    }
+    .overlay {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white; 
+    }
+    .overlay h1{
+        text-shadow: 10px 0 10px black;
+        font-size: 15px;
+    }
+    .overlay h4{
+        text-shadow: 10px 0 10px black;
+        font-size: 9px;
+    }
+    .overlay p{
+        text-shadow: 10px 0 10px black;
+        font-size: 8px;
+    }
+    .youtubeplayer p{
+        font-size: 12px;
+        width: 90%;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .mob-home-head{
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+}
