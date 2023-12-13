@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import bg1 from './images/bg5.png';
 import stories from './images/bg2.jpg';
 import gita from './images/gita.jpg';
@@ -19,14 +19,30 @@ function Home() {
   };
 
   const smallScreenOpts = {
-    height: '250', // Adjust the height for smaller screens
-    width: '100%', // Set width to 100% for responsiveness
+    height: '250',
+    width: '100%',
   };
 
+  const getVideoOpts = () => {
+    return window.innerWidth <= 769 ? smallScreenOpts : defaultOpts;
+  };
+
+  const [videoOpts, setVideoOpts] = useState(getVideoOpts());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVideoOpts(getVideoOpts());
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Run this effect only on mount and unmount
 
   const onReady = (event) => {
-    // Access to player in all event handlers via event.target
-    event.target.playVideo(); // For example, autoplay the video
+    event.target.playVideo();
   };
 
   return (
@@ -49,7 +65,7 @@ function Home() {
         <h1 style={{ textAlign: "center", marginBottom: "10px", marginTop: "10px", textDecoration: "underline" }} className='mob-home-head'>Mental Illness Causes</h1>
         <YouTube
           videoId={videoId}
-          opts={window.innerWidth <= 769 ? smallScreenOpts : defaultOpts}
+          opts={videoOpts}
           onReady={onReady}
         />
         <p className='mob-para'>Mental illness comprises diverse conditions impacting cognition, emotion, and behavior. Genetic predisposition, neurochemical imbalances, and environmental factors contribute to its onset. Psychological triggers, such as trauma or stress, can amplify risks. Stigma surrounds mental health, hindering early intervention and treatment. Understanding the multifaceted nature of mental illness is vital for fostering empathy and support. Recognition that mental health is as crucial as physical health is essential, encouraging open dialogue. By addressing biological, psychological, and societal aspects, we can collectively create an environment that prioritizes mental well-being and supports those navigating the complexities of mental health challenges.</p>
