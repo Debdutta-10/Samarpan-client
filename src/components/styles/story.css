@@ -1,0 +1,7 @@
+@media screen and (max-width:769px) {
+    .mob-stories {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
