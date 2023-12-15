@@ -1,0 +1,46 @@
+.shlok-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 40vh;
+    border: 2px solid orange;
+    box-shadow: 0 0 5px orange;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.shlok-image {
+    width: 30%;
+}
+
+.shlok-text {
+    width: 50%;
+    line-height: 2.5;
+}
+.shlok-text p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+.shlok-text h2 {
+    color: black;
+}
+.shloka-button{
+    padding: 5px;
+    font-size: 1.2rem;
+    display: block;
+    margin: auto;
+    border: none;
+    background: #FFBF00;
+    color: white;
+}
+
+.shloka-button:hover{
+    cursor: pointer;
+    background: orange;
+    color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px orange;
+}
