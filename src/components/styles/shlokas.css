@@ -44,3 +44,43 @@
     transform: scale(1.1);
     box-shadow: 0 0 5px orange;
 }
+.geeta-playlist-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.geeta-playlist-container p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:769px){
+    .shlok-image {
+        width: 100%;
+    }
+    .shlok-container{
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+    }
+    .shlok-text {
+        width: 100%;
+    }
+    .shlok-text p{
+        margin-top: 0px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .shlok-text h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .geeta-playlist-container p{
+        font-size: 1rem;
+    }
+}

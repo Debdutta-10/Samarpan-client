@@ -1,5 +1,9 @@
 var quotes = [
     {
+      "text": 'Whenever there is a decline in righteousness and an increase in unrighteousness, at that time I manifest myself on earth. To protect the righteous, to annihilate the wicked, and to reestablish the principles of dharma, I appear millennium after millennium.',
+      "author": '- Lord Sri Krishna - Bhagavad-gita 4.7',
+    },
+    {
       "text": 'O son of Kunti, the nonpermanent appearance of happiness and distress, and their disappearance in due course, are like the appearance and disappearance of winter and summer seasons. They arise from sense perception, O scion of Bharata, and one must learn to tolerate them without being disturbed.',
       "author": '- Lord Sri Krishna - Bhagavad-gita 2.14',
     },
