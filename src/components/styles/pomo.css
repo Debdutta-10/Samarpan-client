@@ -1,0 +1,47 @@
+.pomo-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pomo-text {
+    display: flex;
+    background: #17B169;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    line-height: 1.7rem;
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 20px;
+}
+.timer-settings-container{
+    width: 25%;
+}
+
+@media screen and (max-width:769px){
+    .pomo-container {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pomo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        line-height: 1.7rem;
+        border: 2px solid black;
+        padding: 25px;
+        border-radius: 20px;
+    }
+    .timer-settings-container{
+        margin: auto;
+        width: 80%;
+    }
+
+}

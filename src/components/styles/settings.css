@@ -1,10 +1,18 @@
+.settings-container{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 10px black;
+    padding: 3%;
+    border-radius: 20px;
+}
 .slider{
     height: 30px;
-    border: 2px solid red;
+    border: 2px solid #fd5c63;
     border-radius: 20px;
 }
 .thumb{
-    background-color: red;
+    background-color: #fd5c63;
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -12,11 +20,11 @@
 }
 .slider-green{
     height: 30px;
-    border: 2px solid hwb(120 0% 50%);
+    border: 2px solid #17B169;
     border-radius: 20px;
 }
 .thumb-green{
-    background-color: green;
+    background-color: #17B169;
     cursor: pointer;
     width: 30px;
     height: 30px;

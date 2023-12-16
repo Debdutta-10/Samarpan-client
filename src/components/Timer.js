@@ -84,7 +84,7 @@ function Timer() {
                     text={`${minutes}:${seconds}`}
                     styles={buildStyles({
                         textColor: 'rgb(0,0,0)',
-                        pathColor: mode === 'work' ? 'rgb(255,0,0)' : 'rgb(0,128,0)',
+                        pathColor: mode === 'work' ? '#fd5c63' : '#17B169',
                     })}
                 />
             </div>
