@@ -1,0 +1,24 @@
+.slider{
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.thumb{
+    background-color: red;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.slider-green{
+    height: 30px;
+    border: 2px solid hwb(120 0% 50%);
+    border-radius: 20px;
+}
+.thumb-green{
+    background-color: green;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
