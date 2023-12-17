@@ -13,9 +13,22 @@
     justify-content: center;
     width: 30%;
     line-height: 1.7rem;
-    border: 2px solid black;
     padding: 25px;
     border-radius: 20px;
+}
+.pomo-text2 {
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    line-height: 1.7rem;
+    padding: 25px;
+    border-radius: 20px;
+    margin: auto;
+}
+.pomo-text2 p,ol {
+    font-size: 1.2rem;
 }
 .timer-settings-container{
     width: 25%;
