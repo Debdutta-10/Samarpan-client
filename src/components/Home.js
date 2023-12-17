@@ -42,7 +42,7 @@ function Home() {
   }, []); // Run this effect only on mount and unmount
 
   const onReady = (event) => {
-    event.target.playVideo();
+    // event.target.playVideo();
   };
 
   return (

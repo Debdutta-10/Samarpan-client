@@ -9,29 +9,34 @@ import Pomo from './components/Pomo.js'
 import Yoga from './components/Yoga.js'
 import Meditation from './components/Meditation.js'
 import Journal from './components/Journal.js'
-
+import ScrollToTop from './components/ScrollToTop.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Navbar></Navbar>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        <Route path='/features' element={<Features></Features>}></Route>
-        <Route path='/stories' element={<Stories></Stories>}></Route>
-        <Route path='/shlokas' element={<Shlokas></Shlokas>}></Route>
-        <Route path='/pomo' element={<Pomo></Pomo>}></Route>
-        <Route path='/yoga' element={<Yoga></Yoga>}></Route>
-        <Route path='/meditation' element={<Meditation></Meditation>}></Route>
-        <Route path='/journal' element={<Journal></Journal>}></Route>
-        
-        <Route></Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/features' element={<Features />} />
+          <Route path='/stories' element={<Stories />} />
+          <Route path='/shlokas' element={<Shlokas />} />
+          <Route path='/pomo' element={<Pomo />} />
+          <Route path='/yoga' element={<Yoga />} />
+          <Route path='/meditation' element={<Meditation />} />
+          <Route path='/journal' element={<Journal />} />
+          <Route path='*' element={<NotFound />} /> {/* Use a wildcard for unmatched routes */}
+        </Routes>
+        <ScrollToTop />
+      </BrowserRouter>
     </>
   );
+}
+
+function NotFound() {
+  return <h1>404 Not Found</h1>;
 }
 
 export default App;
