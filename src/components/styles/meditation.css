@@ -1,0 +1,26 @@
+.med-text {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.med-button {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    display: block;
+    margin: auto;
+    padding: 3px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.med-button:hover {
+    transform: scale(1.1);
+}
+
+.med-button svg {
+    width: 30px;
+    float: left;
+    margin-right: 5px;
+    align-items: center;
+}
