@@ -1,0 +1,11 @@
+.footer-container{
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer-container a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}

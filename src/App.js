@@ -11,6 +11,7 @@ import Meditation from './components/Meditation.js'
 import Journal from './components/Journal.js'
 import ScrollToTop from './components/ScrollToTop.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='*' element={<NotFound />} /> {/* Use a wildcard for unmatched routes */}
         </Routes>
         <ScrollToTop />
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );
