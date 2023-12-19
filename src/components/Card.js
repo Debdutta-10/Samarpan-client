@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/card.css'
-import bg1 from './images/bg2.jpg';
 import { Link } from 'react-router-dom';
 function Card(props) {
     return (

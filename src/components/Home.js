@@ -39,7 +39,7 @@ function Home() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Run this effect only on mount and unmount
+  }); // Run this effect only on mount and unmount
 
   const onReady = (event) => {
     // event.target.playVideo();

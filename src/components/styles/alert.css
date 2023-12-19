@@ -1,0 +1,22 @@
+.alert {
+  width: auto;
+  padding: 15px;
+}
+
+.alert-primary {
+  color: white;
+  background-color: #cce5ff;
+}
+
+.alert-danger {
+  color: white;
+  background-color: #fd5c63;
+}
+
+@media screen and (max-width:769px) {
+  .alert {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+}
