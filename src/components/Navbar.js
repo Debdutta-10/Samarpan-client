@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
 
             <div id='mobile' onClick={handleClick}>
-                <i id='bar' className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <i style={{color:'white'}} id='bar' className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
             </div>
         </nav>
     );
