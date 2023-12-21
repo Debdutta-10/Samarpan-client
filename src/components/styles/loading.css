@@ -1,0 +1,11 @@
+.loading img{
+    display: block;
+    margin: auto;
+    margin-top:5%;
+    width: 10%;
+}
+@media screen and (max-width:769px){
+    .loading img{
+        width: 30%;
+    }
+}
